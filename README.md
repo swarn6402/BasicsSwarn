@@ -23,20 +23,6 @@ Welcome to my **HTML all-in-one Repository**! This repository is dedicated to pr
 
 3. **Contribute**: If you find anything missing or would like to add improvements, feel free to fork the repository and submit a pull request!
 
-## 📂 File Structure
-
-```
-html-notes/
-│
-├── 01_html_basics.md
-├── 02_text_formatting.md
-├── 03_links_and_images.md
-├── 04_tables_and_forms.md
-├── 05_html5_features.md
-└── examples/
-    └── sample_form.html
-    └── sample_table.html
-```
 
 ## 💡 Getting Started with HTML
 
