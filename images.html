@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #4444;
+        }
+    </style>
+
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/873384/pexels-photo-873384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="700px" alt="No image found">
+
+    <img src="swarnimg.jpg" width="500px" height="500px" alt="Swarn's image">   
+    
+    <picture>
+        <source media="(min-width: 600px)" srcset="./swarnimg"/>
+        <source media="(min-width: 450px)" srcset="./swarnimg2">
+    </picture>   <!-- Use <img> for simple images. Use <picture> for advanced responsive designs when you need to serve different images based on media conditions. -->
+
+    
+        <!-- image map generator -->
+
+    <img src="breakingbad.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="Walter White" title="Walter White" href="" coords="781,10,1005,167" shape="rect">
+        <area onclick="two()" alt="Jesse Pinkman" title="Jesse Pinkman" href="" coords="241,31,449,170" shape="rect">
+    </map>    <!--onclick is used to execute the function and does something when clicked on the image. Overall, this map tag us useful and shows many options for a particulat image-->
+
+    <script> 
+        function one(){
+            alert("You clicked on Heisenberg")
+        }
+        function two(){
+            alert("You clicked on Jesse Pinkman")
+        }
+    </script>   <!-- We use this script tag to add JS code and the functions defined to show a message on clicking the image (and the functions and execute them in the map section)-->
+
+</body>
+</html>
