@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Virat Kohli!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Light Blue Background */
+            color: #01579b; /* Dark Blue Text */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #0288d1; /* Sky Blue for the headers */
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .video-container {
+            margin: 20px auto;
+            display: inline-block;
+        }
+
+        video {
+            width: 100%;
+            max-width: 500px;
+            border: 5px solid #0288d1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow around the video */
+        }
+
+        footer {
+            background-color: #01579b;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .share-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .share-button:hover {
+            background-color: #01579b;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            video {
+                max-width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy 36th Birthday, Virat Kohli!</h1>
+    <h2>From Swarn</h2>
+
+    <p class="message">
+        The King was just 22 years old when an 8-year-old Swarn watched him win the 2011 World Cup.
+        Now, a 22-year-old Swarn saw the King win the T20 World Cup at 35. What an amazing journey!
+    </p>
+
+    <div class="video-container">
+        <video id="birthdayVideo" controls>
+            <source src="./videoVK.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <button class="share-button" onclick="sharePage()">Share on WhatsApp</button>
+
+    <footer>
+        <p>Celebrating a legend – Kohli, the King of Cricket!</p>
+    </footer>
+
+    <script>
+        // Fun Birthday Popup
+        window.onload = function() {
+            setTimeout(function() {
+                alert('Happy Birthday, Virat Kohli! From Swarn!');
+            }, 2000); // 2-second delay
+        };
+
+        // Responsive video adjustment
+        window.addEventListener('resize', function() {
+            const video = document.getElementById('birthdayVideo');
+            const width = window.innerWidth;
+            if (width < 600) {
+                video.width = 350;
+                video.height = 640;
+            } else {
+                video.width = 500;
+                video.height = 640;
+            }
+        });
+
+        // WhatsApp Share Function
+        function sharePage() {
+            const pageUrl = window.location.href;
+            const text = "Check out this awesome birthday tribute for Virat Kohli by Swarn! " + pageUrl;
+            const whatsappUrl = "https://api.whatsapp.com/send?text=" + encodeURIComponent(text);
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
