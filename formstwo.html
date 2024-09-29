@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+        background-color: rgb(44, 37, 37);
+        color: aliceblue;
+        }
+    </style>
+    
+</head>
+<body>   
+    <!-- Forms are used to gather and input various type of information from users and the attributes facilitate this process -->
+    <h1>Forms in HTML</h1> 
+    
+    <form action="" method="GET" accept-charset="UTF-8" autocomplete="off" enctype="text/plain">
+        <label for="fname">First Name</label> <br>
+        <input type="text" placeholder="Enter first name" name="" id="fname"> 
+
+    <br>   <!-- Select is also a kind-of input type-->
+        <label for="">Select Gender</label>
+        <select name="Gender" id="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <input type="hidden" name="">  <!-- this is used by developer to send backed server requests and information especially in django-->
+
+<br>  
+
+        <button type="submit">Submit Information</button>
+    </form>
+</body>
+</html>
