@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarnjeet N Tiwary</title>
+    <style>
+        @font-face {
+            font-family: 'JioType';
+            src: url('/JioType-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'JioType';
+            src: url('/JioType-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'JioType', Arial, sans-serif;
+            min-height: 100vh;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(-45deg, #1a347b, #5709e8, #7b1a4e, #d9003d);
+            background-size: 400% 400%;
+            animation: gradient 30s ease infinite;
+            z-index: -1;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+            position: relative;
+        }
+        h1 {
+            font-size: 6rem;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0 0 40px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: revealText 2.5s cubic-bezier(0.19, 1, 0.22, 1) 1s forwards;
+        }
+        .about-me {
+            font-size: 1.8rem;
+            color: #ffffff;
+            font-weight: 500;
+            margin: 0 0 70px 0;
+            opacity: 0;
+            transform: translateY(15px);
+            animation: revealText 2s cubic-bezier(0.19, 1, 0.22, 1) 2s forwards;
+            line-height: 1.4;
+            text-align: center;
+        }
+        .letter {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 40px;
+            margin: 0 auto;
+            max-width: 700px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(10px);
+            animation: revealLetter 1.5s cubic-bezier(0.19, 1, 0.22, 1) 2.5s forwards;
+        }
+        .letter p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #000;
+            margin: 0 0 20px 0;
+            text-align: left;
+        }
+        .letter p:last-child {
+            margin-bottom: 0;
+        }
+        @keyframes revealText {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes revealLetter {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 30px;
+            }
+            .about-me
+ {
+                font-size: 1.4rem;
+                margin-bottom: 50px;
+            }
+            .letter {
+                margin: 0 20px;
+                padding: 30px;
+            }
+            .letter p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/favicon2.ico">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    <div class="header">
+        <h1>Swarn's Page</h1>
+        <p class="about-me"><strong>Welcome to Swarnjeet's landing page!</strong></p>
+    </div>
+    <div class="content-container">
+        <div class="letter">
+            <p><strong>Hey there! I'm Swarnjeet, a full-stack developer who loves turning complex problems into elegant solutions. Currently pursuing my Bachelor's in Engineering, I blend my hardware knowledge with my passion for web development to create unique digital experiences.</strong>
+
+<p>During my time at StarX91 Technologies, I had the opportunity to dive deep into modern web development, where I significantly improved website performance and implemented new features using React and Node.js. What drives me is not just writing code, but creating solutions that make a real difference in user experience and performance.</p>
+
+<p>I'm particularly proud of my work on autonomous systems, especially my racing drone project where I combined computer vision with real-time processing. It's this intersection of hardware and software that really gets me excited – there's something magical about seeing code transform into physical action!</p>
+
+<p>When I'm not coding, you'll find me exploring new technologies or contributing to the tech community. I've had the chance to organize our college tech fest and contribute to local NGOs, experiences that have taught me the value of both leadership and teamwork.</p>
+
+<p>My technical toolbox includes React, Node.js, TypeScript, and Python, along with experience in AWS, Docker, and MongoDB. But what really sets me apart is my ability to see the bigger picture – whether it's optimizing website performance, implementing efficient algorithms, or designing intuitive user interfaces.</p>
+
+<p>I believe in continuous learning and pushing boundaries. From winning entrepreneurship competitions to exploring drone technology, I'm always looking for new challenges and opportunities to grow. If you're interested in creating innovative solutions or just want to chat about technology, I'd love to connect!</p>
+
+<p>Let's build something amazing together! 🚀</p>
+
+
+<p>Best Regards,<br> SNT </p>
+        </div>
+    </div>
+</body>
+</html>
